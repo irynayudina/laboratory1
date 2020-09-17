@@ -12,15 +12,23 @@ int main(int args, char *argv[])
     int number1 = 4;
     int number2 = 4;
     std::cout << "enter the firs operand (integer)" << endl;
-    std::cin >> number1;
+    std::string temp_str;
+    std::cin >> temp_str;
+    while(!check_number(temp_str))
+    {
+        std::cout << "enter the firs operand (integer)" << endl;
+        std::cin >> temp_str;
+    }
+    std::stringstream convert1(temp_str);
+
     std::cin.clear();
     std::cin.ignore(32767, '\n');
-    std::stringstream convert(argv[1]); // создаем переменную stringstream с именем convert, инициализируя её значением argv[1]
+    std::stringstream convert(argv[1]);
     int myint;
     if (!(convert >> myint)) 
     {
         myint = 1;
-    } // выполняем конвертацию        
+    }       
     number2 = myint;
     std::string string1 = "text1";
     std::string string2 = "text2";
