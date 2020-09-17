@@ -9,7 +9,7 @@
 int main(int args, char *argv[])
 {
     std::cout << "Hello World!\n";
-    int number1 = 3;
+    int number1 = 4;
     int number2 = 4;
     std::cout << "enter the firs operand (integer)" << endl;
     std::cin >> number1;
@@ -17,9 +17,11 @@ int main(int args, char *argv[])
     std::cin.ignore(32767, '\n');
     std::stringstream convert(argv[1]); // создаем переменную stringstream с именем convert, инициализируя её значением argv[1]
     int myint;
-    if (!(convert >> myint)) // выполняем конвертацию
-        myint = 0;
-    number1 = myint; // static_cast<int>(*argv[1]);
+    if (!(convert >> myint)) 
+    {
+        myint = 1;
+    } // выполняем конвертацию        
+    number2 = myint;
     std::string string1 = "text1";
     std::string string2 = "text2";
     std::cout << Concatination(string1, string2);
