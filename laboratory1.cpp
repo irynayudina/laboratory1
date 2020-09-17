@@ -20,7 +20,7 @@ int main(int args, char *argv[])
         std::cin >> temp_str;
     }
     std::stringstream convert1(temp_str);
-
+    convert1 >> number1;
     std::cin.clear();
     std::cin.ignore(32767, '\n');
     std::stringstream convert(argv[1]);
