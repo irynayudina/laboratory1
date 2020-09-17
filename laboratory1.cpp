@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include "myHeader.h"
+#include "Car.h"
+#include "Bike.h"
 int main()
 {
     std::cout << "Hello World!\n";
@@ -19,6 +21,20 @@ int main()
     std::cout << Addition(number1, number2);
     std::cout << endl;
     std::cout << Multiplication(number1, number2);
+    std::cout << endl;
+    Car car1(985.7, 200, "wheels", 4, "BMW", 2020);
+    Bike bike1(9.5, 200, "wheels", 2);
+    std::cout << "Info of the car: " << std::endl;
+    car1.PrintEntity();
+    std::cout << "action of a car: ";
+    car1.action();
+    std::cout << std::endl;
+    std::cout << "Info of the bike: " << std::endl;
+    bike1.PrintEntity();
+    std::cout << "action of a bike: ";
+    bike1.action();
+    std::cout << std::endl;
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

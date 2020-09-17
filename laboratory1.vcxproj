@@ -147,18 +147,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Animal.cpp" />
-    <ClCompile Include="Cat.cpp" />
-    <ClCompile Include="dog.cpp" />
+    <ClCompile Include="Bike.cpp" />
+    <ClCompile Include="Car.cpp" />
     <ClCompile Include="functionsForNumbers.cpp" />
     <ClCompile Include="functionsForStrings.cpp" />
     <ClCompile Include="laboratory1.cpp" />
+    <ClCompile Include="LandVehicle.cpp" />
+    <ClCompile Include="Vehicle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Animal.h" />
-    <ClInclude Include="Cat.h" />
-    <ClInclude Include="dog.h" />
+    <ClInclude Include="Bike.h" />
+    <ClInclude Include="Car.h" />
+    <ClInclude Include="LandVehicle.h" />
     <ClInclude Include="myHeader.h" />
+    <ClInclude Include="Vehicle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
