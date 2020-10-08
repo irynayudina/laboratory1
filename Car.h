@@ -3,9 +3,11 @@
 class Car :
 	public LandVehicle
 {
+private: int _year;
 public:
 	std::string brand;
 	int year;
+	
 	void action() 
 	{
 		std::cout << " drive " << std::endl;
@@ -15,7 +17,10 @@ public:
 		brand = _brand;
 		year = _year;
 	}
-	void PrintEntity()
+	void set_year() {
+		_year = year;
+	}
+	void PrintEntity() override
 	{
 		std::cout << "weight_of_the_vehicle: " << weight_of_the_vehicle << " max_speed: " << max_speed << " means_of_movement: " << means_of_movement << " amount_of_wheels: " << amount_of_wheels << "  brand: " << brand << " year: " << year << std::endl;
 	}

@@ -14,7 +14,7 @@ public:
 		max_speed = _max_speed;
 		means_of_movement = _means_of_movement;
 	}
-	void PrintEntity()
+	virtual void PrintEntity()
 	{
 		std::cout << "weight_of_the_vehicle: " << weight_of_the_vehicle << " max_speed: " << max_speed << " means_of_movement: " << means_of_movement << std::endl;
 	}
